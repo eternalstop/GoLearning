@@ -19,4 +19,28 @@
     .写出一个能充分利用多核的程序需要很深的系统编程积淀
     .go可以轻松地写出跑满所有CPU的程序
 
-##  
+## 4.go的程序结构
+    package main
+    import(
+        "fmt"
+        "os"
+    )
+    func main() {
+        fmt.Println("hello world!")
+    }
+
+### 4.1package：go通过package组织
+    .package关键字
+    .放在程序的第一行
+    .两种package，一种是库package，一种是二进制package
+    .二进制package使用main来表示，库package的名字跟go文件所在目录名一致
+
+#### 4.1.1二进制package
+    .以`package main`作为文件的第一行
+    .有且只有一个main函数
+
+#### 4.1.2引入package
+    .通过关键字import来引入其他package
+    .多个package通过括号包含起来
+    .引入但没有使用的package会引起编译错误
+
