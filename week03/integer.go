@@ -1,11 +1,11 @@
-package main
+package week03
 
 import (
 	"fmt"
 	"unsafe"
 )
 
-func main() {
+func study_int() {
 	var x1 int
 	var x2 int32
 	var x3 int64
