@@ -1,4 +1,4 @@
-package week03
+package main
 
 import (
 	"fmt"
@@ -25,4 +25,21 @@ func study_int() {
 	fmt.Println(x4, unsafe.Sizeof(x4))
 	fmt.Println(x5, unsafe.Sizeof(x5))
 	fmt.Println(y1, y2)
+}
+
+func study_string() {
+	var s1 string
+	var c string
+	var b byte
+	s1 = "hello world"
+	b = s1[0]
+	c = s1[0:3]
+	fmt.Println(s1)
+	fmt.Println(b)
+	fmt.Println(c)
+}
+
+func main() {
+	study_int()
+	study_string()
 }
