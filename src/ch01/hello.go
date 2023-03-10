@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"os"
 )
 
 func main() {
@@ -12,7 +11,7 @@ func main() {
 	y = 2
 	swap(&x, &y)
 	fmt.Println(x, y)
-	fmt.Println("hello, golang world!!!", os.Args[1])
+	//fmt.Println("hello, golang world!!!", os.Args[1])
 }
 
 func swap(p *int, q *int) {
