@@ -1,2 +1,0 @@
-# GoLearning
-Go Learning
